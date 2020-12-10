@@ -1,3 +1,5 @@
+# Configuração Typescript para Node.js
+
 #### Este projeto serve como exemplo de uma configuração do [Typescript](https://www.typescriptlang.org/) para o [Node.js](https://nodejs.org/en/).
 O Node.js não trabalha diretamente com o Typescript. São necessárias algumas configurações para desenvolver com esta linguagem neste ambiente. Este projeto tem esse objetivo, mostrar um exemplo de configuração do Typescript para o Node.js.
 
