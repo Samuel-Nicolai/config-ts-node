@@ -1,7 +1,7 @@
 # Configuração Typescript para Node.js
-----
-#### Este projeto serve como exemplo de uma configuração do Typescript para o Node.js.
-O Node.js não trabalha diretamente com o Typescript. São necessárias algumas configurações para desenvolver com esta linguagem neste ambiente. Este projeto tem esse objetivo, mostrar uma possível configuração do Typescript para o Node.js.
+
+#### Este projeto serve como exemplo de uma configuração do [Typescript](https://www.typescriptlang.org/) para o [Node.js](https://nodejs.org/en/).
+O Node.js não trabalha diretamente com o Typescript. São necessárias algumas configurações para desenvolver com esta linguagem neste ambiente. Este projeto tem esse objetivo, mostrar um exemplo de configuração do Typescript para o Node.js.
 
 #### Iniciando o projeto com [yarn](https://yarnpkg.com/).
 ```zsh
@@ -10,7 +10,8 @@ $ yarn init
 ```
 > Siga as instruções do gerenciador para criar o projeto.
 
-#### Obtendo o [typescript](https://www.typescriptlang.org/) e as ferramentas para utiliza-lo no [nodejs](https://nodejs.org/en/).
+#### Configurando o transpiling e o build.
+Para configurarmos os transpiling automático do typescript para o desenvolvimento e build para a produção precisamos instalar as seguintes bibliotecas:
 ```zsh
 $ yarn add typescript nodemon sucrase -D
 ```
