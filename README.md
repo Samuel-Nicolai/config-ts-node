@@ -15,7 +15,7 @@ Para configurarmos os transpiling automático do typescript para o desenvolvimen
 ```zsh
 $ yarn add typescript nodemon sucrase -D
 ```
-> A flag -D indica que os pacotes serão utilizados somente em desenvolvimento.
+> A flag -D indica que os pacotes serão utilizados somente em desenvolvimento.\n
 > Ao instalar o typescript podemos utilizar o [tsc](https://www.typescriptlang.org/docs/handbook/compiler-options.html) para compilar nosso código para produção.
 > Com o [nodemon](https://nodemon.io/) podemos adicionar a funcionalidade que recarrega um arquivo automaticamente ao salvá-lo.
 > O [sucrase](https://sucrase.io/) atua como tranpiler muito rápido entre o código typescript e javascript, ideal para o cenário de desenvolvimento.
