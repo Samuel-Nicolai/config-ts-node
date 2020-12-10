@@ -44,11 +44,11 @@ Abra então o arquivo package.json e inclua a seguinte instrução após a licen
 
 ```json
  {
-	...
+	//...
 	"scripts": {
     	"dev": "nodemon src/index.ts"
 	},
-	...
+	//...
 }
 ```
 Esta configuração indica que o gerenciador de pacote pode rodar o script de desenvolvimento. Você pode fazer isso com o seguinte comando no seu shell:
@@ -59,7 +59,7 @@ $ yarn dev
 Com este comando seu ambiente de desenvolvimento está em funcionamento.
 Você pode parar o funcionamento com o comando ctrl + c.
 
-** Configurando o build**
+**Configurando o build**
 
 Para configurar o build, ou seja, para construir o código do projeto que vai rodar em produção no Node.js, pode-se utilizar o compilador do typescript. Para gerar o setup de configuração do typescript rodamos o seguinte comando com o shell na raiz do projeto:
 
@@ -70,15 +70,16 @@ Este comando gerou o arquivo tsconfig.json na raiz do seu projeto. Abra este arq
 
 ```json
  {
-	... {
-		...
+	//... 
+	{
+		//...
 		"outDir": "./dist",
 		"rootDir": "./src",
-		...
+		//...
 		"removeComments": true,
-		...
+		//...
 	}
-	...
+	//...
 }
 ```
 Altere as linhas indicadas para definir o diretório de destino da construção da aplicação de produção.
@@ -87,12 +88,12 @@ Agora crie o script de build logo abaixo de dev em package.json para a execuçã
 
 ```json
  {
-	...
+	//...
 	"scripts": {
 		"dev": "nodemon src/index.ts",
 		"build": "yarn tsc"
 	},
-	...
+	//...
 }
 ```
 Para rodar o build da sua aplicação execute:
