@@ -44,11 +44,11 @@ Abra então o arquivo package.json e inclua a seguinte instrução após a licen
 
 ```json
  {
-	//...
+	// ...
 	"scripts": {
     	"dev": "nodemon src/index.ts"
 	},
-	//...
+	// ...
 }
 ```
 Esta configuração indica que o gerenciador de pacote pode rodar o script de desenvolvimento. Você pode fazer isso com o seguinte comando no seu shell:
