@@ -6,6 +6,10 @@
   "repository": "https://github.com/Samuel-Nicolai/config-ts-node.git",
   "author": "Samuel-Nicolai",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "yarn tsc"
+  },
   "devDependencies": {
     "nodemon": "^2.0.6",
     "sucrase": "^3.16.0",
