@@ -5,7 +5,7 @@ O Node.js não trabalha diretamente com o Typescript. São necessárias algumas 
 
 Para realizar os próximos passos, utiliza-se o Shell e o Visual Studio Code.
 
-#### Iniciando o projeto com [yarn](https://yarnpkg.com/).
+### Iniciando o projeto com [yarn](https://yarnpkg.com/).
 ```zsh
 $ mkdir nome_projeto && cd nome_projeto
 $ yarn init
