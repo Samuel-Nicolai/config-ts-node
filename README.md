@@ -103,3 +103,57 @@ Para rodar o build da sua aplicação execute:
 $ yarn build
 ```
 Este comando vai criar o diretório /dist com sua aplicação compilada para javascript. Que pode ser usada no Node.js em produção.
+
+#### Configurando os testes com [JEST](https://jestjs.io/)
+Adicionando as dependências:
+```zsh
+$ yarn add jest @types/jest ts-jest -D
+```
+Para configurar os testes, crie o arquivo jest.config.js na raiz do projeto e inclua o seguinte código:
+
+```js
+module.exports = {
+	roots: ['<rootDir>/src'],
+	transform: {
+		'^.+\\.tsx?$':  'ts-jest',
+	},
+	testRegex:  '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
+	moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+}
+```
+Adicione em tsconfig.json as seguintes configurações:
+```json
+{
+	...,
+	"include": ["src/**/*"],
+  	"exclude": [
+    	"node_modules", 
+    	"jest.config.js",
+    	"coverage", 
+    	"**/*.spec.ts"
+  	]
+}
+```
+O teste deve ser no formato path/nome-do-arquivo.spec|test.ts.
+
+Adicione os seguintes scripts para o gerenciador de pacotes:
+```json
+{
+	...,
+	"scripts": {
+		...,
+		"test": "jest",
+	    "coverage": "jest --coverage"
+	}
+}
+```
+Pronto agora é possível rodar os testes com o comando:
+
+```zsh
+$ yarn test
+```
+
+E para cobertura de testes:
+```zsh
+$ yarn coverage
+```
