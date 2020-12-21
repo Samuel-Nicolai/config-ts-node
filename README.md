@@ -127,10 +127,10 @@ Adicione em tsconfig.json as seguintes configurações:
 	...,
 	"include": ["src/**/*"],
   	"exclude": [
-    	"node_modules", 
-    	"jest.config.js",
-    	"coverage", 
-    	"**/*.spec.ts"
+		"node_modules", 
+		"jest.config.js",
+		"coverage", 
+		"**/*.spec.ts"
   	]
 }
 ```
@@ -143,7 +143,7 @@ Adicione os seguintes scripts para o gerenciador de pacotes:
 	"scripts": {
 		...,
 		"test": "jest",
-	    "coverage": "jest --coverage"
+	    	"coverage": "jest --coverage"
 	}
 }
 ```
